@@ -1,12 +1,12 @@
 import random
 from visualization import draw_graph
 
-def gerar_matriz_adj(n_pontos=5, n_conexoes=2, peso_max=10):
+def gerar_matriz_adj(n_pontos, n_conexoes, peso_max=10):
     if n_pontos < 2:
         print("Número mínimo de pontos é 2, caso seja 1 a distancia minima é 0")
         return 0
 
-    if n_conexoes >= n_pontos - 1:
+    if n_conexoes <= n_pontos - 1:
         print("Número mínimo de conexões deve ser menor que n-pontos?.")
         return 0
     if n_conexoes > n_pontos * (n_pontos - 1):
@@ -40,17 +40,17 @@ def gerar_matriz_adj(n_pontos=5, n_conexoes=2, peso_max=10):
             conexoes_atuais += 1
 
     return matriz
-def main():
-    n_pontos = 8
-    n_conexoes = 6 
-    peso_max = 7
+##ef main():
+    ##n_pontos = 8
+    ##n_conexoes = 25 
+    ##peso_max = 7
 
-    matriz_adj = gerar_matriz_adj(n_pontos, n_conexoes, peso_max)
+    ##matriz_adj = gerar_matriz_adj(n_pontos, n_conexoes, peso_max)
 
-    matriz = gerar_matriz_adj(7, 4, 5)
-    for linha in matriz:
-        print(linha)
-
-    draw_graph(matriz_adj)
+    ##matriz = gerar_matriz_adj(7, 21, 5)
     
-main()
+
+    ##draw_graph(matriz_adj)
+    ##draw_graph(matriz)
+    
+##main()
