@@ -6,9 +6,9 @@ def gerar_matriz_adj(n_pontos, n_conexoes, peso_max=10):
         print("Número mínimo de pontos é 2, caso seja 1 a distancia minima é 0")
         return 0
 
-    if n_conexoes <= n_pontos - 1:
-        print("Número mínimo de conexões deve ser menor que n-pontos?.")
-        return 0
+    #if n_conexoes <= n_pontos - 1:
+        #print("Número mínimo de conexões deve ser menor que n-pontos?.")
+        #return 0
     if n_conexoes > n_pontos * (n_pontos - 1):
         print("Número máximo de conexões excedido.Realmente necessário?")
         return 0
